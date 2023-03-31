@@ -9,7 +9,7 @@ colors = ['\33[31m', '\33[0m', '\033[96m']
 
 def banner():
 	os.system('clear')
-	with open('passwords.txt', 'r') as b:
+	with open('banner.txt', 'r') as b:
 		print(colors[0] + b.read() + colors[1])
 
 def flood(ip, port, timer):
